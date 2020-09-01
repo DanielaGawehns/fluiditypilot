@@ -1,7 +1,7 @@
 Package: fluiditypilot
 Title: PILOT DATA AND CODE FOR SOCIAL FLUIDITY PAPER ECML-GEM WORKSHOP 2020
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     person(given = "Daniela",
            family = "Gawehns",
            role = c("aut", "cre"),
@@ -15,3 +15,9 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 URL: https://github.com/DanielaGawehns/fluiditypilot
 BugReports: https://github.com/DanielaGawehns/fluiditypilot/issues
+Imports: bookdown,
+    here, utils, plyr, readr
+Suggests: 
+    devtools,
+    git2r,
+    testthat
