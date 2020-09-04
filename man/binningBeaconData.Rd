@@ -16,4 +16,12 @@ returns the data as X, Y, bin indicator (e.g., bin indicator = 1 for all connect
 }
 \description{
 Binning beacon/ beagle data (or any csv in format: tagX, tagY, time) and applying by default a default 50\% minimum signal per bin on the data to count the bin as signal.
+this function needs as input the imported csv file from the beacons.
+it will return data that are very similar to when you are using read.responder and tempSmooth on the Extractor files.
+Variable names in output
+tagX       tagY power       time timeStamp reX reY binIndicator   data_p
+power here is RSSI in the extractor file
+time/ timeStamp correspond (in theory) with time Local on extractor file
+binIndicator is calculated in the same way as for extractor file
+data_p is a helper variable and can be ignored
 }
